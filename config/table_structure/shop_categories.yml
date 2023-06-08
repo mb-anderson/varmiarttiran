@@ -1,0 +1,23 @@
+table_name: shop_categories
+table_comment: 'Static shop categories.'
+fields:
+  title:
+    type: short_text
+    column_name: title
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Category title.'
+    length: '255'
+  code:
+    type: short_text
+    column_name: code
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Category code.'
+    length: '255'

@@ -1,0 +1,23 @@
+table_name: blog_attachments
+table_comment: 'Merge table blogs vs files, for multiple attachments'
+fields:
+  blog:
+    type: table_reference
+    column_name: blog
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Blog reference.'
+    reference_table: blogs
+  attachment:
+    type: file
+    column_name: attachment
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: Attachment.
+    reference_table: files

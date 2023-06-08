@@ -1,0 +1,44 @@
+Kayseri:
+  name: Kayseri
+  address: 'Gevhernesibe Mahallesi'
+  town: Kayseri
+  county: Türkiye
+  postalcode: '38010'
+  country: 224
+  opening_hours: '<p>Haftaiçi 09:00 - 18:00</p><p>Haftasonu 10:00 - 16:00</p>'
+  weight: 0
+  email: mburakyucel38@gmail.com
+  phone: '+905076000349'
+Ankara:
+  name: Ankara
+  address: 'Emek Mahallesi'
+  town: Ankara
+  county: Çankaya
+  postalcode: '06010'
+  country: 224
+  opening_hours: '<p>Haftaiçi 09:00 - 18:00</p><p>Haftasonu 10:00 - 16:00</p>'
+  weight: 0
+  email: mburakyucel38@gmail.com
+  phone: '+905380920836'
+Eskişehir:
+  name: Eskişehir
+  address: Odunpazarı
+  town: 'New Cross'
+  county: Eskişehir
+  postalcode: '26020'
+  country: 224
+  opening_hours: '<p>Haftaiçi 09:00 - 18:00</p><p>Haftasonu 10:00 - 16:00</p>'
+  weight: 0
+  email: mburakyucel38@gmail.com
+  phone: '+905380920836'
+'İstanbul Avrupa':
+  name: 'İstanbul Avrupa'
+  address: 'Levent Sapphire'
+  town: İstanbul
+  county: İstanbul
+  postalcode: '34010'
+  country: 224
+  opening_hours: '<p>Haftaiçi 09:00 - 18:00</p><p>Haftasonu 10:00 - 16:00</p>'
+  weight: 0
+  email: mburakyucel38@gmail.com
+  phone: '+905076000349'

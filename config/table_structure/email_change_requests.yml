@@ -1,0 +1,33 @@
+table_name: email_change_requests
+table_comment: 'Contains data about change email requests.'
+fields:
+  account:
+    type: table_reference
+    column_name: account
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: 'User reference.'
+    reference_table: users
+  new_mail:
+    type: short_text
+    column_name: new_mail
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: 'Requested change email.'
+    length: '255'
+  ip_address:
+    type: short_text
+    column_name: ip_address
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Ip address of user requesting change.'
+    length: '255'

@@ -1,0 +1,12 @@
+- Src\Command\ConfigurationExportCommand
+- Src\Command\ConfigurationImportCommand
+- Src\Command\AddAdminUserCommand
+- App\Command\ClearProductsCommand
+- App\Command\ImportCommand
+- Src\Command\ClearTemporaryFilesCommand
+- Src\Command\ClearCacheCommand
+- App\Command\UpdateProductUrlAliasCommand
+- App\Command\SearchWordsGenerateCommand
+- App\Command\ImportItemsCommand
+- App\Command\MigrateCompanyNamesCommand
+- App\Command\MigrateProductImageCommand

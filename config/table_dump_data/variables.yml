@@ -1,0 +1,76 @@
+site_name:
+  key: site_name
+  value: 'Var mı Arttıran?'
+  type: text
+hash_salt:
+  key: hash_salt
+  value: Hh2VZAz7jSiDuDkVC/f2zjlvJJTfETNv1VMlaYvRprD/SmGFG3TLWoDoEjEds7ftAaA=
+  type: hidden
+email_address:
+  key: email_address
+  value: m36381972@yandex.com
+  type: text
+email_password:
+  key: email_password
+  value: txqbbywxksdprjvn
+  type: hidden
+email_smtp_host:
+  key: email_smtp_host
+  value: smtp.yandex.com.tr
+  type: text
+email_smtp_port:
+  key: email_smtp_port
+  value: '465'
+  type: integer
+email_smtp_secure:
+  key: email_smtp_secure
+  value: ssl
+  type: text
+email_username:
+  key: email_username
+  value: 'Var mı Arttıran?'
+  type: text
+minimum_order_price:
+  key: minimum_order_price
+  value: '100'
+  type: float
+payment_report_email:
+  key: payment_report_email
+  value: mburakyucel@gmail.com
+  type: text
+test_email_send_address:
+  key: test_email_send_address
+  value: mburakyucel38@gmail.com
+  type: text
+minimum_private_order_count:
+  key: minimum_private_order_count
+  value: '2'
+  type: integer
+minimum_enquirement_count:
+  key: minimum_enquirement_count
+  value: '2'
+  type: integer
+general_enquiries_phone:
+  key: general_enquiries_phone
+  value: '+905076000349'
+  type: text
+cron_key:
+  key: cron_key
+  value: 59f889fa34a95a9557da
+  type: text
+api_url:
+  key: api_url
+  value: .
+  type: text
+api_test_url:
+  key: api_test_url
+  value: .
+  type: text
+collection_max_payment:
+  key: collection_max_payment
+  value: '10000000'
+  type: float
+invoice_footer:
+  key: invoice_footer
+  value: "<table class=\"page_footer\" style=\"width: 750px;\">\r\n            <tr>\r\n                <td style=\"width: 100%; text-align: center\">\r\n                    Malların mülkiyeti, ödeme tam olarak yapılana kadar Satıcıda (Var mı Arrtıran) kalır.\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td style=\"width: 100%; text-align: center\">\r\n                    Var mı Arttıran Mehmet Ali Tahtacı ve Mustafa Burak Yücel'in ortak ticari markasıdır.\r\n                </td>\r\n            </tr>\r\n<tr>\r\n                <td style=\"width: 100%; text-align: right\">\r\n                   Vergi Numarası: 739780975 Büyük Mükellefler Vergi Dairesi\r\n                </td>\r\n            </tr>\r\n        </table>"
+  type: text

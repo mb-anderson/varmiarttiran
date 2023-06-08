@@ -1,0 +1,23 @@
+table_name: users_roles
+table_comment: 'Constains User''s roles. Look at User::roles'
+fields:
+  user_id:
+    type: table_reference
+    column_name: user_id
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: 'User Id.'
+    reference_table: users
+  role_id:
+    type: table_reference
+    column_name: role_id
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: 'Role Id.'
+    reference_table: roles

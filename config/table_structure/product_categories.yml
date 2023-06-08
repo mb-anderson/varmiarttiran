@@ -1,0 +1,53 @@
+table_name: product_categories
+table_comment: 'Contains product categories.'
+fields:
+  name:
+    type: short_text
+    column_name: name
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: true
+    default: null
+    comment: 'Name of category.'
+    length: '255'
+  code:
+    type: short_text
+    column_name: code
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: true
+    default: null
+    comment: 'Temporary column for migration.'
+    length: '255'
+  image:
+    type: file
+    column_name: image
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Category box image.'
+    reference_table: files
+  parent:
+    type: table_reference
+    column_name: parent
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Parent category value. If needed.'
+    reference_table: product_categories
+  weight:
+    type: integer
+    column_name: weight
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Weight used when sorting categories.'
+    length: null

@@ -1,0 +1,54 @@
+table_name: intact_log
+table_comment: 'Contains debug data for intact service call.'
+fields:
+  order:
+    type: table_reference
+    column_name: order
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Order reference.'
+    reference_table: basket
+  account:
+    type: table_reference
+    column_name: account
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Account reference.'
+    reference_table: user_address
+  request_type:
+    type: enumarated_list
+    column_name: request_type
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Type of request sent.'
+    values:
+      order: order
+      payment: payment
+      account: account
+  request:
+    type: long_text
+    column_name: request
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Sent request.'
+  response:
+    type: long_text
+    column_name: response
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Response returned.'

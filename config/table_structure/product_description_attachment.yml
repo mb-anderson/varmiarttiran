@@ -1,0 +1,23 @@
+table_name: product_description_attachment
+table_comment: 'Contains attachment linked in product description.'
+fields:
+  product:
+    type: table_reference
+    column_name: product
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Product reference.'
+    reference_table: products
+  attachment:
+    type: file
+    column_name: attachment
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Attachment file.'
+    reference_table: files

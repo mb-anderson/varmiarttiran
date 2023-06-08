@@ -1,0 +1,23 @@
+table_name: product_pictures
+table_comment: 'marge table between product and file '
+fields:
+  product:
+    type: table_reference
+    column_name: product
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'product info'
+    reference_table: products
+  image:
+    type: file
+    column_name: image
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'product image'
+    reference_table: files

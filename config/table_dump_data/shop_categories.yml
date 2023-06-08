@@ -1,0 +1,129 @@
+AFR:
+  title: 'AFRICAN / CARIBBEAN / ETHIOPIAN'
+  code: AFR
+ARA:
+  title: 'ARABIC/PERSIAN/LEBANESE /EGYPTIAN /AFGHAN'
+  code: ARA
+BAK:
+  title: BAKERY
+  code: BAK
+BAR:
+  title: 'BARS /  PUB / NIGHT CLUB / WINE BAR'
+  code: BAR
+BEA:
+  title: 'BARBERS & BEAUTY SALOONS'
+  code: BEA
+BUS:
+  title: 'BUSINESS  / OFFICES / BUILDERS'
+  code: BUS
+BUT:
+  title: BUTCHERS
+  code: BUT
+CAF:
+  title: 'CAFE RESTAURANTS'
+  code: CAF
+CAR:
+  title: 'CARE HOMES'
+  code: CAR
+CAS:
+  title: 'CASINO / GAMING / INTERNET CAFE'
+  code: CAS
+CHA:
+  title: 'CHARITY SHOPS / RELIGIOUS EST'
+  code: CHA
+COL:
+  title: 'COLLEGES / UNIVERSITIES'
+  code: COL
+DEL:
+  title: 'COFFEE AND BISTRO BARS / SANDWICH BARS '
+  code: DEL
+DES:
+  title: 'DESERT PARLOUR / PATISSERIE '
+  code: DES
+DIN:
+  title: 'DINER / STEAK & BURGER HOUSE '
+  code: DIN
+EUR:
+  title: 'EASTERN EUROPEAN RESTAURANT /TA'
+  code: EUR
+EXP:
+  title: 'EXPORT WHOLESALE'
+  code: EXP
+FIS:
+  title: 'FISH & CHIPS'
+  code: FIS
+FRI:
+  title: 'FRIED CHICKENS'
+  code: FRI
+GOV:
+  title: 'GOVERMENT / LOCAL COUNCILS'
+  code: GOV
+HOM:
+  title: 'HOMES / PRIVATE'
+  code: HOM
+HOT:
+  title: 'B&B + HOTELS + GUEST HOUSES'
+  code: HOT
+ICE:
+  title: 'ICE CREAM VAN/PARLOUR'
+  code: ICE
+IND:
+  title: 'INDIAN  REST / PAKISTANI /TANDOORI'
+  code: IND
+ITA:
+  title: 'ITALIAN RESTAURANTS'
+  code: ITA
+JAP:
+  title: 'JAPANESE / SUSHI BAR'
+  code: JAP
+KEB:
+  title: 'KEBAB TAKEWAYS / RESTAURANT'
+  code: KEB
+MOB:
+  title: 'MOBILE TAKE AWAYS / AND STREET FOOD'
+  code: MOB
+NEW:
+  title: 'NEWS AGENTS'
+  code: NEW
+'OFF':
+  title: 'OFF LICENCES'
+  code: 'OFF'
+ORI:
+  title: 'ORIANTAL FOODS / CHINESE / THAI'
+  code: ORI
+PET:
+  title: 'PETROL STATION / GARAGES'
+  code: PET
+PHA:
+  title: 'PHARMACY / CHEMIST'
+  code: PHA
+PIZ:
+  title: 'PIZZA BARS'
+  code: PIZ
+PLA:
+  title: 'KIDS PLAYGROUNDS / ACTIVITY CENTRES'
+  code: PLA
+POS:
+  title: 'POST OFFICES'
+  code: POS
+SCO:
+  title: 'PRIMARY AND SECONDARY SCHOOLS'
+  code: SCO
+SNA:
+  title: 'SNACK / SANDWICH / DELI / KIOSK'
+  code: SNA
+SPO:
+  title: 'SPORT / LEISURE  CENTRES & GYMS'
+  code: SPO
+SUP:
+  title: 'SUPERMARKETS & GROCERY SHOPS'
+  code: SUP
+TAK:
+  title: 'ALL IN KEBAB/PIZZA/FISH/FRIED CHKN'
+  code: TAK
+VEG:
+  title: 'VEGETARIAN / VEGAN RESTAURANTS'
+  code: VEG
+WHS:
+  title: 'WHOLESALE COLLECTION / DELIVERY'
+  code: WHS

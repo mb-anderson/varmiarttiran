@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="{{ language() }}">
+	{% include 'header.twig' %}
+	<body class="{{ controller.body_classes|join(' ') }}">
+		<div id="wrapper" class="flex-column">
+			{{ controller.navbar }}
+			{{ controller.categoryNavbar }}
+			<div id="content-wrapper" class="d-flex flex-row">
+				{{ controller.sidebar }}
+				{% block to_top %}
+					<a class='scroll-to-top rounded' href='#'>
+						<i class='fas fa-angle-up'></i>
+					</a>
+				{% endblock %}
+				<div class='container-fluid px-0 p-md-3'>
+					{% block title %}
+						<div class="d-sm-flex align-items-center justify-content-between mb-4 text-center">
+							<h1 class="h3 mb-0 text-primary">{{ controller.title }}</h1>
+							<a class="d-sm-inline-block btn btn-md btn-success shadow-sm mr-1 mb-1" href="{{ constant('BASE_URL') }}/products/add">
+								<i class="fa fa-plus text-white-50"></i>
+								<text class="">
+									{{t('add_advert')}}
+
+								</text>
+
+							</a>
+						</div>
+					{% endblock %}
+					{% block content %}
+						<div class="row">
+							<div class="col-md-12">
+								<div class="card p-2">
+									{{ controller.printMessages()|raw }}
+									{{ controller.echoContent()|raw }}
+								</div>
+							</div>
+						</div>
+					{% endblock %}
+				</div>
+			</div>
+		</div>
+		{% block footer %}
+			<footer class="text-white bg-gradient-success">
+				<div class="container text-center p-3">
+					<img class="footer-logo" src="{{ constant("BASE_URL") }}/assets/logo-white.svg"/>
+				</div>
+				<div class="container">
+					<div class="row text-white text-left text-uppercase">
+						<div class="col-md-3 col-12 mt-4">
+							{{ t("call") }}
+							<hr/>
+							<a href="https://api.whatsapp.com/send?phone=905076000349" target="_blank">
+								<img class="img-fluid mb-3" src="{{ constant("BASE_URL") }}/assets/whatsapp-logo.png">
+							</a>
+							<br clear="all">
+							{{ t("download_app") }}
+							<hr/>
+							<a href="https://www.sonbellek.com" target="_blank">
+								<img class="img-fluid" src="{{ constant("BASE_URL") }}/assets/google-play-badge.png">
+							</a>
+							<a href="https://www.sonbellek.com" target="_blank">
+								<img class="img-fluid mt-2" src="{{ constant("BASE_URL") }}/assets/app-store.svg">
+							</a>
+						</div>
+						<div class="col-md-3 col-12 mt-4">
+							{{ t("customer_care") }}
+							<hr>
+							<div>
+								<a href="{{ constant("BASE_URL") }}/delivery">
+									{{ t("delivery_days") }}
+								</a>
+							</div>
+							<div>
+								<a href="{{ constant("BASE_URL") }}/contact">
+									{{ t("contact_us") }}
+								</a>
+							</div>
+							<div>
+								<a href="{{ constant("BASE_URL") }}/contact">
+									{{ t("contact_form") }}
+								</a>
+							</div>
+							<div>
+								<a href="{{ constant("BASE_URL") }}/register">
+									{{ t("become_a_customer") }}
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-12 mt-4">
+							{{ t("our_website") }}
+							<hr class="footer-hr">
+							<div>
+								<a href="{{ constant("BASE_URL") }}/page/about-us">
+									{{ t("about_us") }}
+								</a>
+							</div>
+							<div>
+								<a href="{{ constant("BASE_URL") }}/page/privacy-policy">
+									{{ t("privacy_policy") }}
+								</a>
+							</div>
+							<div>
+								<a href="{{ constant("BASE_URL") }}/page/terms-and-conditions">
+									{{ t("terms_and_conditions")|raw }}
+								</a>
+							</div>
+						</div>
+						<div class="col-md-3 col-12 mt-4">
+							{{ t("explore_more") }}
+							<hr class="footer-hr">
+							<div>
+								<a href="{{ constant("BASE_URL") }}/page/how-to">
+									{{ t("how_to") }}
+								</a>
+							</div>
+							<div>
+								<a href="{{ constant("BASE_URL") }}/page/erudus">
+									Erudus
+								</a>
+							</div>
+							<div>
+								<a href="{{ constant("BASE_URL") }}/blogs">
+									{{ t("blog") }}
+								</a>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="container text-center">
+					<small>© Copyright 2023, Var mı Arttıran? Tüm Hakları Saklıdır.
+						<br>
+						<p>
+							<a href="https://www.sonbellek.com" class="text-light">GAZİ ÜNİVERSİTESİ ADINA MUSTAFA BURAK YÜCEL, MEHMET ALİ TAHTACI ve HÜSEYİN GÖYDAN TARAFINDAN YAPILMIŞTIR.</a>
+						</p>
+
+						<div class="container text-center p-3">
+							<a href="https://www.sonbellek.com" target="_blank">
+								<i class="fab fa-facebook-square"></i>
+							</a>
+							<a href="https://www.sonbellek.com" target="new">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a href="https://www.sonbellek.com" target="new">
+								<i class="fab fa-twitter-square"></i>
+							</a>
+							<a href="https://www.sonbellek.com" target="new">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</div>
+
+					</small>
+				</div>
+			</footer>
+		{% endblock %}
+	</body>
+</html>

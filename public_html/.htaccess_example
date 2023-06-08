@@ -1,0 +1,24 @@
+RewriteEngine On
+RewriteRule ^files index.php [L,NC] 
+RewriteRule ^index\.php$ - [L]
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R]
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.*$ index.php [L,QSA]
+<IfModule php7_module>
+   php_flag asp_tags Off
+   php_flag display_errors On
+   php_value max_execution_time 90
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value post_max_size 40M
+   php_value memory_limit 512M
+   php_value session.gc_maxlifetime 600
+   php_value upload_max_filesize 20M
+</IfModule>
+
+Options -Indexes
+
+ErrorDocument 403 "403 Unauthorized"

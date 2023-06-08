@@ -1,0 +1,148 @@
+{% extends "forms/form.twig" %}
+
+{% block fields %}
+	<div class="d-none">
+		{{ form.fields["form_id"] }}
+		{{ form.fields["form_build_id"] }}
+		{{ form.fields["form_token"] }}
+	</div>
+	<ul class="nav nav-tabs nav-fill">
+		<li class="nav-item">
+			<a class="nav-link {{ form.stage == 1 ? " active bg-gradient-primary text-white" }}" href="{{ constant("BASE_URL") ~ "/register" }}">
+				<span class="badge badge-info">
+					1
+				</span>
+				{{ t("select_for_account") }}
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link {{ form.stage == 2 ? " active bg-gradient-primary text-white" }}" id="register-account-tab">
+				<span class="badge badge-info">
+					2
+				</span>
+				{{ t("register_account") }}
+			</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link {{ form.stage == 3 ? " active bg-gradient-primary text-white" }}" id="completed-tab">
+				<span class="badge badge-info">
+					3
+				</span>
+				{{ t("completed") }}
+			</a>
+		</li>
+	</ul>
+	<div class="tab-content p-2">
+		{% if form.stage == 1 %}
+			<div class="tab-pane fade show active">
+				{{ t("enter_doornumber_and_postalcode") }}
+				<div class="row mb-5">
+					<div class="form-group col-md-6">
+						{{ form.fields["doornumber"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["postalcode"] }}
+					</div>
+					<div class="col-md-12 d-flex justify-content-center">
+						<input type="submit" class="btn btn-primary btn-user px-5" value="{{ t( form.accounts ? "search_again" : "submit") }}" name="submit">
+					</div>
+				</div>
+				{% if form.accounts %}
+					<h2 class="text-primary font-weight-bold">
+						{{ t("accounts") }}
+					</h2>
+					{% for account in form.accounts %}
+						<div class="form-check mt-3">
+							<input 
+								class="form-check-input account-select {{ account.is_customer ? "is-customer" }}" 
+								type="radio" 
+								name="account" 
+								value="{{ account.account_number }}"
+								id="account_{{ account.account_number }}"/>
+							<label class="form-check-label" for="account_{{ account.account_number }}">
+								<i class="fa fa-hand-point-right text-danger"></i>
+								{{ t("account_number") }} : <b>{{ account.account_number }}</b>
+								{{ t("company_name") }} : <b>{{ account.company_name }}</b>
+								{{ t("email") }} : <b>{{ account.email ?: t("email_not_exist") }}</b> 
+							</label>
+						</div>
+					{% endfor %}
+
+					<a href="#" class="btn btn-link text-warning where-account-no mt-3">
+						{{ t("account_number_info") }}
+					</a>
+				{% endif %}
+
+			</div>
+		{% endif %}
+		{% if form.stage == 2 %}
+			<div class="tab-pane fade show active">
+				<div class="row">
+					<div class="form-group col-md-6">
+						{{ form.fields["company_name"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["phone"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["mobile"] }}
+					</div>
+					<div class="form-group col-md-6"></div>
+					<div class="form-group col-md-6">
+						{{ form.fields["name"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["surname"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["address"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["town"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["county"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["country"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["postalcode"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["email"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["password"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["password_again"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["opening_hours"] }}
+					</div>
+					<div class="form-group col-md-6">
+						{{ form.fields["shop_category"] }}
+					</div>
+					<div class="form-group col-12">
+						<input type="submit" class="btn btn-primary btn-user btn-block" value="{{ t("register") }}" name="register">
+					</div>
+				</div>
+			</div>
+		{% endif %}
+		{% if form.stage == 3 %}
+			<div class="tab-pane fade show active">
+				e
+			</div>
+		{% endif %}
+	</div>
+	<div class="row">
+		<hr/>
+		<div class="text-center col-12">
+			<a class="small" href="{{ constant("BASE_URL") ~ "/login" }}">
+				{{ t("have_account") }}
+				<b>{{ t("login") }}</b>
+			</a>
+		</div>
+	</div>
+{% endblock %}

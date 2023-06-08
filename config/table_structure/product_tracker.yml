@@ -1,0 +1,32 @@
+table_name: product_tracker
+table_comment: 'Contains item added place.'
+fields:
+  basket_product:
+    type: table_reference
+    column_name: basket_product
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Product reference.'
+    reference_table: basket_products
+  place:
+    type: short_text
+    column_name: place
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Product list placement.'
+    length: '255'
+  url:
+    type: text
+    column_name: url
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: 'Url that user clicked.'

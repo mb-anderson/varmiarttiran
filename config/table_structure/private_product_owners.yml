@@ -1,0 +1,23 @@
+table_name: private_product_owners
+table_comment: 'Owner and product connection for private products.'
+fields:
+  product:
+    type: table_reference
+    column_name: product
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: ''
+    reference_table: products
+  owner:
+    type: table_reference
+    column_name: owner
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: 'User that owns this product.'
+    reference_table: users

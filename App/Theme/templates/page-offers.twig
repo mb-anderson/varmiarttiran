@@ -1,0 +1,28 @@
+{% extends "page.twig" %}
+
+{% block content %}
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card p-2">
+				{{ controller.printMessages()|raw }}
+
+				<h3 class="text-primary">{{ t("given_offers") }}</h3>
+				{% if controller.givenOfferListSearch.data|length > 0 %}
+					{{ controller.echoContent()|raw }}
+				{% else %}
+					<div class="btn btn-primary text-white">{{ t("you_did_not_give_an_offer") }}</div>
+				{% endif %}
+
+				<h3 class="text-primary">{{ t("received_offers") }}</h3>
+				{% if controller.receivedOfferListSearch.data|length > 0 %}
+					{{ controller.receivedOfferListSearch|raw }}
+
+				{% else %}
+					<div class="btn btn-primary text-white">{{ t("you_have_not_any_received_offer") }}</div>
+				{% endif %}
+
+
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,102 @@
+table_name: order_billing_address
+table_comment: 'Stores orders billing address data.'
+fields:
+  order:
+    type: table_reference
+    column_name: order
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: ''
+    reference_table: basket
+  account_number:
+    type: short_text
+    column_name: account_number
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Unique account number'
+    length: '255'
+  company_name:
+    type: short_text
+    column_name: company_name
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: ''
+    length: '500'
+  address:
+    type: text
+    column_name: address
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: ''
+  town:
+    type: short_text
+    column_name: town
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: ''
+    length: '255'
+  county:
+    type: short_text
+    column_name: county
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: ''
+    length: '255'
+  postalcode:
+    type: short_text
+    column_name: postalcode
+    primary_key: false
+    autoIncrement: false
+    isNull: false
+    isUnique: false
+    default: null
+    comment: ''
+    length: '255'
+  country:
+    type: table_reference
+    column_name: country
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Country reference.'
+    reference_table: countries
+  phone:
+    type: short_text
+    column_name: phone
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: ''
+    length: '20'
+  mobile:
+    type: short_text
+    column_name: mobile
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: ''
+    length: '20'

@@ -1,0 +1,32 @@
+table_name: offers
+table_comment: 'Price offer of products'
+fields:
+  product:
+    type: table_reference
+    column_name: product
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Product reference'
+    reference_table: products
+  user:
+    type: table_reference
+    column_name: user
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'User reference'
+    reference_table: users
+  offer:
+    type: float
+    column_name: offer
+    primary_key: false
+    autoIncrement: false
+    isNull: true
+    isUnique: false
+    default: null
+    comment: 'Offer price'
